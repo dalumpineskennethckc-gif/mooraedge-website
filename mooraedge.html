@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mooraedge | Business Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+        url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d") center/cover no-repeat;
+      color: #fff;
+    }
+    .hero h1 span {
+      color: #ffc107;
+    }
+     /* Testimonials animation */
+  .testimonial {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease forwards;
+  }
+
+  .testimonial:nth-child(1) { animation-delay: 0.2s; }
+  .testimonial:nth-child(2) { animation-delay: 0.4s; }
+  .testimonial:nth-child(3) { animation-delay: 0.6s; }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .mission-vision {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
+    center/cover no-repeat;
+  color: #fff;
+}
+
+.mission-vision h2 span {
+  color: #ffc107;
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Mooraedge</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto nav-pills">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero d-flex align-items-center text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">
+      Empowering Entrepreneurs, Companies, and Job Seekers to Succeed <span>Mooraedge</span>
+    </h1>
+    <p class="lead mt-3">
+    Where growth begins.
+Every dream deserves a solid start. At MooraEdge, we guide aspiring entrepreneurs, support growing businesses, and connect job seekers to opportunities that match their potential. Your success story starts here.
+    </p>
+    <a href="#contact" class="btn btn-warning btn-lg mt-4">Get Started</a>
+  </div>
+</section>
+<!-- Mission & Vision -->
+<section id="mission-vision" class="mission-vision py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+
+        <div id="mvCarousel"
+             class="carousel slide carousel-fade"
+             data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <!-- Mission -->
+            <div class="carousel-item active">
+              <h2 class="fw-bold mb-3">
+                Our <span>Mission</span>
+              </h2>
+              <p class="lead">
+                To create meaningful connections between people and opportunities by guiding entrepreneurs, empowering businesses, and supporting job seekers to reach their fullest potential.
+              </p>
+            </div>
+
+            <!-- Vision -->
+            <div class="carousel-item">
+              <h2 class="fw-bold mb-3">
+                Our <span>Vision</span>
+              </h2>
+              <p class="lead">
+               To shape a future where every individual and organization thrives through collaboration, innovation, and equitable access to workforce solutions.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button"
+                  data-bs-target="#mvCarousel"
+                  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button"
+                  data-bs-target="#mvCarousel"
+                  data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Business & Entrepreneur Support</h5>
+            <p class="card-text">
+             Launch, build, and scale your own service with expert guidance.
+            Whether you’re an aspiring CEO or already managing your own business, MooraEdge helps you move from ideas to execution with clarity and confidence.
+
+            We’ll work with you to turn your vision into a structured, profitable, and sustainable service brand.
+            </p>
+          </div>
+          <button 
+          type="button" 
+          class="btn btn-primary mt-3"
+          data-bs-toggle="modal"
+          data-bs-target="#businessModal">
+          More Details
+        </button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Staffing & Recruitment</h5>
+            <p class="card-text">
+             Overview
+              We help businesses find the right talent efficiently and professionally. From sourcing to onboarding, our goal is to deliver qualified candidates that perfectly match your company’s needs, culture, and goals..
+            </p>
+          </div>
+          <button 
+          type="button" 
+          class="btn btn-primary mt-3"
+          data-bs-toggle="modal"
+          data-bs-target="#staffModal">
+          More Details
+        </button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <h5 class="card-title">Job Seeker Support</h5>
+            <p class="card-text">
+             Overview
+            We help job seekers confidently prepare, apply, and land their ideal jobs. Whether you’re a fresh graduate, career shifter, or professional looking for better opportunities, we’ll guide you every step of the way — from creating an impressive résumé to acing your interview.
+            </p>
+          </div>
+          <button 
+          type="button" 
+          class="btn btn-primary mt-3"
+          data-bs-toggle="modal"
+          data-bs-target="#jobSeekerModal">
+          More Details
+        </button>
+        </div>
+      </div>
+      <!-- Modal jobseeker -->
+     <div class="modal fade" id="jobSeekerModal" tabindex="-1" aria-labelledby="jobSeekerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="jobSeekerModalLabel">Job Seeker Support</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul>
+          <h4>Service Inclusions:</h4>
+          <h5>Career Consultation & Goal Setting</h5>
+          <li>1:1 session to understand your background and career goals</li>
+          <li>Guidance on identifying target roles or industries</li>
+          <h5>Professional Résumé & Cover Letter Writing</h5>
+          <li>Customized, keyword-optimized résumé tailored to your desired role
+</li>
+          <li>Professionally written cover letter highlighting your strengths</li>
+          <h5>LinkedIn Profile Optimization</h5>
+          <li>Profile setup or enhancement for better recruiter visibility</li>
+          <li>Tips for networking and personal branding on LinkedIn</li>
+         <h5>Job Search & Application Guidance</h5>
+          <li>Curated list of job openings that match your skills</li>
+          <li>Guidance on effective job search strategies</li>
+         <h5>Interview Coaching</h5>
+         <li>Mock interviews and feedback sessions</li>
+         <li>Tips on body language, confidence, and common interview questions</li>
+         <h5>Post-Interview Support</h5>
+         <li>Thank-you email templates and follow-up strategies</li>
+         <li>Offer review and negotiation tips</li>
+
+        </ul>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ <!-- Modal staff -->
+ <div class="modal fade" id="staffModal" tabindex="-1" aria-labelledby="jobSeekerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="jobSeekerModalLabel">Staffing & Recruitment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul>
+          <h4>Service Inclusions:</h4>
+          <h5>Job Analysis & Requirement Alignment</h5>
+          <li>Consultation to understand the client’s staffing needs.</li>
+          <li>Development of job descriptions and qualifications.</li>
+          <h5>Talent Sourcing</h5>
+          <li>Posting job openings on top job boards and social media.
+</li>
+          <li>Access to internal candidate databases and referral networks.</li>
+          <h5>Screening & Shortlisting</h5>
+          <li>Resume screening and background checks.</li>
+          <li>Initial phone or video interviews to assess suitability.</li>
+         <h5>Interview Coordination</h5>
+          <li>Scheduling interviews between candidates and client HR/hiring managers.</li>
+          <li>Providing interview feedback and candidate reports.</li>
+         <h5>Candidate Endorsement</h5>
+         <li>Presentation of top qualified candidates with summaries and recommendations.</li>
+         <li>Assistance in decision-making and offer negotiation.</li>
+         <h5>Onboarding Support (Optional)</h5>
+         <li>Coordination of pre-employment requirements.</li>
+         <li>Orientation or onboarding assistance for new hires.</li>
+
+        </ul>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal business -->
+ <div class="modal fade" id="businessModal" tabindex="-1" aria-labelledby="jobSeekerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="jobSeekerModalLabel">Business & Entrepreneur Support</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul>
+          <h4>Inclusions / What’s Covered:</h4>
+          <h5>Business Consultation & Strategy</h5>
+          <li>Clarify your goals, define your target market, and identify the right service model for your business.</li>
+          <h5>Brand Development</h5>
+          <li>Help you define your identity, from business name and brand voice to your unique selling proposition.
+</li>
+          <h5>Service Structuring & Pricing</h5>
+          <li>We’ll assist in packaging your services clearly and competitively so clients understand your value.</li>
+         <h5>Operational Setup</h5>
+          <li>Get guidance on building your workflows, client management systems, and tools to manage daily operations efficiently.</li>
+         <h5>Staffing & Recruitment Support</h5>
+         <li>Need extra hands? We’ll help you find, screen, and onboard the right staff to support your growth.</li>
+         <h5>Marketing & Client Acquisition</h5>
+         <li>Learn how to attract your first clients through effective branding, outreach, and lead generation techniques.</li>
+         <h5>Ongoing Mentorship</h5>
+         <li>You won’t do it alone — get continuous advice and support as your business grows.</li>
+         
+
+        </ul>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+      
+    
+      
+    </div>
+  </div>
+</section>
+
+<!-- Client Feedback -->
+<section id="testimonials" class="py-5 bg-warning bg-opacity-10">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">What Our Clients Say</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4 testimonial">
+        <div class="card h-100 shadow-sm text-center p-4">
+          <p class="fst-italic">
+            “Mooraedge helped us build a professional online presence.
+            Our sales increased within weeks!”
+          </p>
+          <h6 class="fw-bold mt-3 mb-0">Sarah Johnson</h6>
+          <small class="text-muted">Startup Founder</small>
+        </div>
+      </div>
+
+      <div class="col-md-4 testimonial">
+        <div class="card h-100 shadow-sm text-center p-4">
+          <p class="fst-italic">
+            “Their team is reliable, creative, and very easy to work with.
+            Highly recommended.”
+          </p>
+          <h6 class="fw-bold mt-3 mb-0">David Miller</h6>
+          <small class="text-muted">Marketing Manager</small>
+        </div>
+      </div>
+
+      <div class="col-md-4 testimonial">
+        <div class="card h-100 shadow-sm text-center p-4">
+          <p class="fst-italic">
+            “Professional service and excellent support.
+            Mooraedge truly understands business needs.”
+          </p>
+          <h6 class="fw-bold mt-3 mb-0">Aisha Khan</h6>
+          <small class="text-muted">Business Owner</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold">Our Professional Journey</h2>
+        <p>
+         MooraEdge Workforce Services began with a vision to redefine how people and businesses connect.
+        What started as a small consulting initiative has grown into a trusted partner for entrepreneurs building their services, companies seeking the right talent, and professionals pursuing meaningful careers. Through continuous learning, innovation, and a people-centered approach, we deliver solutions that empower growth, strengthen workplaces, and open doors to new opportunities for all.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+             class="img-fluid rounded" alt="Team">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <input type="text" class="form-control mb-3" placeholder="Your Name">
+          <input type="email" class="form-control mb-3" placeholder="Your Email">
+          <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+          <button class="btn btn-warning w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5">
+  <div class="container">
+    <div class="row text-start">
+
+      <!-- Opening Hours -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Opening Hours</h6>
+        <p class="mb-1">Monday – Friday</p>
+        <p class="mb-1">8:00 am – 5:00 pm</p>
+        <p class="mb-1">8:00 am – 4:00 pm</p>
+        <p class="mb-0">8:00 am – 4:00 pm</p>
+      </div>
+
+      <!-- Address -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Address</h6>
+        <p class="mb-1">PH: Metro Manila</p>
+        <p class="mb-2">(Virtual Office)</p>
+        <p class="mb-1">US: New Jersey</p>
+        <p>(Business Correspondence Office)</p>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Whatsapp</h6>
+        <p class="mb-1">+44 7856 379116</p>
+        <p>+63 992 991 0335</p>
+      </div>
+
+      <!-- Email & Social -->
+      <div class="col-md-3 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Email</h6>
+        <p class="mb-3">moorasphere.official@gmail.com</p>
+        <p class="mb-3">ellamorgan.yourofficial@gmail.com</p>
+
+
+        <h6 class="text-uppercase fw-bold mb-2">Connect</h6>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center pb-3">
+      © 2025 Mooraedge. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  new bootstrap.Carousel('#mvCarousel', {
+    interval: 2500,
+    pause: false
+  });
+</script>
+</body>
+</html>
