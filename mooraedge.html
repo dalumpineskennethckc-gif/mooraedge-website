@@ -489,8 +489,36 @@ Every dream deserves a solid start. At MooraEdge, we guide aspiring entrepreneur
     pause: false
   });
 </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  // 1️⃣ Put PUBLIC_KEY here
+  emailjs.init("YOUR_PUBLIC_KEY");
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // 2️⃣ SERVICE_ID and 3️⃣ TEMPLATE_ID go here
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
+      this
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      this.reset();
+    })
+    .catch((error) => {
+      alert("Failed to send message");
+      console.error(error);
+    });
+  });
+</script>
+
 </body>
 </html>
+
 
 
 
